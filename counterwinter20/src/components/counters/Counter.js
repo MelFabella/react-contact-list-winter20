@@ -1,12 +1,16 @@
 import { Component } from 'react';
+
 class Counter extends Component {
   state = { counterValue: 0 }
+
   inc = () => {
     this.setState({ counterValue: this.state.counterValue + 1 })
   }
+
   dec = () => {
     this.setState({ counterValue: this.state.counterValue - 1 })
   }
+  
   render() {
     return (
       <>
@@ -21,4 +25,5 @@ class Counter extends Component {
     )
   }
 }
+
 export default Counter;

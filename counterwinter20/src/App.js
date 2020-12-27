@@ -43,6 +43,7 @@ class App extends Component {
         </p>
         <button onClick={this.inc}>+</button>
         <button onClick={this.dec}>-</button> */}
+        
         <Counter colorName="red" />
         <Counter colorName="purple" />
         <Counter colorName="green" />
