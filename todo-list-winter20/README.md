@@ -1,26 +1,46 @@
 Initial Release 2013
-  By Facebook 
+  By Facebook
+
 Tools
-  node 
-  yarn / npm 
-  HTML JS CSS, WEBPACK, BABEL 
-  create-react-app
+  node (js server to use)
+  yarn / npm (package)
+
+  HTML JS CSS, WEBPACK, BABEL (long way to create react)
+  create-react-app (quicker way, installed yarn @ global creacte react up)
     Boiler plate
-    create-react-app my-app
+
+    create-react-app my-app (3 ways to create react app)
     npm init react-app my-app
     yarn create react-app my-app
+
   Google Chrome
-  React Dev Tools
+
+  React Dev Tools (add as a chrome extension, helps debug and look up components)
+
+
+
+
 ReactJS is a library, NPM package
   "Just JavaScript" 
+
+
+
 React provides a declarative API complete with 
   state control and 
   lifecycle methods to control the render flow.
+
+
+
 What about other solutions:
   Angular
   Ember
   Vue
   etc...
+
+
+
+
+
 Key Principles 
   Declarative.  
   Composability
@@ -34,32 +54,56 @@ Key Principles
     onClick
     className
     {}
+
+
     // React.createelement.ComponentReact.createelement.Component
     // React.createelement.Component(div counter counter div)
   Components
+
+
+
+
+
+
+
+
+
 Logical Component ( Stateful component )
   do logic 
   state 
   lifecycle Methods
   class 
+
+
 Presentational Component ( stateless component )
   displaying onto the screen  
   const
+
+
+
 HOC 
   Higher ordered component
+
 State - storage { users: [], firstName: '' }
   JS Object we can store properties in
   Component Storage
   When a value changes in state, render is called
+
+
 Props 
   Properties passed down parent to child
   One way 
   Read only 
+
           //         App color
           //        /   \
           //               Counter
           //    Counter color
+
+
+
   /*                 Todo List Structure
+  
                           Index
                             |
                           App (todos)(addTodo) (updateComplete)    
@@ -67,7 +111,9 @@ Props
            (addTodo)TodoForm   List (todos) (updateComplete)      Footer
                                   |       |     |
                                 Todo(updateComplete)    Todo(updateComplete)    Todo(updateComplete) 
+
   */
+
 //  Index
 //  |
 // App      

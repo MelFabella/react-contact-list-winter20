@@ -2,6 +2,7 @@ import { Component } from 'react';
 import List from './components/todos/List';
 import TodoForm from './components/todos/TodoForm';
 import Footer from './components/shared/Footer';
+
 class App extends Component {
   state = { 
     todos: [
@@ -11,21 +12,25 @@ class App extends Component {
     ], 
     filter: 'All'
   }
+
   setFilter = (filter) => {
     this.setState({ filter })
   }
+
   getUniqId = () => {
     //NOTE We are just using this as a helper function for id's since we aren't using a db yet
     return Math.floor((1 + Math.random()) * 0x10000)
       .toString(16)
       .substring(1);
   }
+
   addTodo = (incommingTodo) => {
     const { todos } = this.state
     const newTodo = { ...incommingTodo, id: this.getUniqId() }
     // const newTodo = { title: incommingTodo.title, complete: incommingTodo.complete, id: this.getUniqId() }
     this.setState({ todos: [ newTodo, ...todos ]})
   }
+
   changeComplete = (id) => {
     const { todos } = this.state
     this.setState({ 
@@ -37,6 +42,7 @@ class App extends Component {
       })
     })
   }
+  
   visibleItems = () => {
     const { todos, filter } = this.state
     switch(filter) {
@@ -48,6 +54,7 @@ class App extends Component {
         return todos
     }
   }
+
   render() {
     const { todos, filter } = this.state
     // const todos = this.state.todos
@@ -60,4 +67,5 @@ class App extends Component {
     )
   }
 }
+
 export default App;

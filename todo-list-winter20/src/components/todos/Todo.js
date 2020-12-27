@@ -6,10 +6,12 @@ const Todo = ({ id, title, complete, changeComplete }) => (
     {title}
   </li>
 )
+
 const styles = {
   complete: {
     color: 'grey',
     textDecoration: 'line-through',
   }
 }
+
 export default Todo;

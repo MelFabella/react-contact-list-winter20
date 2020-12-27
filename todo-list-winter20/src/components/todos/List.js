@@ -1,4 +1,5 @@
 import Todo from './Todo';
+
 const List = ({ todoListName, todos, changeComplete }) => (
   <>
     <h1>{todoListName}</h1>
@@ -8,4 +9,5 @@ const List = ({ todoListName, todos, changeComplete }) => (
     </ul>
   </>
 )
+
 export default List;

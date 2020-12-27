@@ -1,15 +1,19 @@
 import { Component } from 'react';
+
 class TodoForm extends Component {
   state = { title: '', complete: false }
+
   handleChange = (e) => {
     const { name, value } = e.target
     this.setState({ [name]: value })
   }
+  
   handleSubmit = (e) => {
     e.preventDefault()
     this.props.addTodo(this.state)
     this.setState({ title: '' })
   }
+
   render() {
     const { title } = this.state 
     return(
@@ -28,4 +32,5 @@ class TodoForm extends Component {
     )
   }
 }
+
 export default TodoForm;
