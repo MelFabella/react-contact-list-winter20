@@ -49,16 +49,24 @@ Initialization:  (Component is rendered for the first time)
     UNSAFE_componentWillUpdate
     getDerivedStateFromProps
     getSnapshotBeforeUpdate
+
+
 HOC 
-  Higher ordered component
+  Higher Ordered Component
+
 State - storage { users: [], firstName: '' }
   JS Object we can store properties in
   Component Storage
   When a value changes in state, render is called
+
+
 Props 
   Properties passed down parent to child
   One way 
   Read only 
+
+
+
   /*                 Contact List Structure
                           Index (styles)
                             |

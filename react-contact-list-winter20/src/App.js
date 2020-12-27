@@ -33,6 +33,7 @@ class App extends Component {
     })
     this.setState({ contacts: [...contacts]})
   }
+  
   render() {
     const { contacts } = this.state
     return (
