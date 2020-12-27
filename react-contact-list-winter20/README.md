@@ -68,6 +68,7 @@ Props
 
 
   /*                 Contact List Structure
+  
                           Index (styles)
                             |
                            App (addC) (contacts) (remove)   
@@ -75,4 +76,5 @@ Props
                   (addC) Form   Contacts (contacts)  (remove)    
                                  |
                                 Contact (remove) 
+
   */

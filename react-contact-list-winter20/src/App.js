@@ -25,6 +25,7 @@ class App extends Component {
     let newContact = { id: this.getId(), ...incomingContact }
     this.setState({ contacts: [ newContact, ...contacts ] })
   }
+
   removeContact = (id) => {
     const contacts = this.state.contacts.filter( contact => {
       if (contact.id !== id) {
@@ -33,7 +34,7 @@ class App extends Component {
     })
     this.setState({ contacts: [...contacts]})
   }
-  
+
   render() {
     const { contacts } = this.state
     return (
@@ -45,4 +46,5 @@ class App extends Component {
     )
   }
 }
+
 export default App;
